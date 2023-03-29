@@ -17,8 +17,8 @@ function generateRandomColor()  //this code was copy paste by google
 // below 18-34 line code logic was by myself by trail
 let c=0;
 data.forEach((e)=>{
-    let color='#eeeeee';
-    if(c%2!=0)
+    let color;    
+    if(c%2!=0)  //if index is odd then generateRandomColor()  this function will create random color code
     {
         color=generateRandomColor();
         document.write(`<ol style="background-color:${color}"><li>${e}</li></ol>`);
